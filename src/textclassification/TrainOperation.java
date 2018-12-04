@@ -21,15 +21,23 @@ public class TrainOperation implements Operation  {
                 getTrainingInstancesIn(trainingDirectory);
         BayesClassificationModel model = new BayesModelGenerator().generateModelFrom(instances);
         
+        String toText = BayesModelSerialization.toText(model);
         try {
             try (FileOutputStream fileOut = new FileOutputStream(outputModelPath)) {
-                ObjectOutputStream out = new ObjectOutputStream(fileOut);
-                out.writeObject(model);
-                out.close();
+                fileOut.write(toText.getBytes());
             }
          System.out.println("Serialized the model in " + outputModelPath);
       } catch (IOException i) {
          System.out.println("Could not serialize the model. Reason " + i.getMessage());
       }
+        
+        if(cmdLineArgs.length >=4){
+            String testPath = cmdLineArgs[3];
+            String[] words = Utils.readWords(new File(testPath));
+            System.out.println("For the following instance:");
+            System.out.println(Arrays.toString(words));
+            Map<String, Double> scores = model.labelsConfidenceScoresForInstance(Arrays.asList(words));
+            System.out.println(scores);
+        }
     }
 }

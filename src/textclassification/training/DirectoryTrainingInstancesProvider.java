@@ -21,6 +21,11 @@ public class DirectoryTrainingInstancesProvider {
     public List<TrainingInstance> getTrainingInstancesIn(String directoryPath){
         List<TrainingInstance> result = new ArrayList<>();
         File dir = new File(directoryPath);
+        File[] files = dir.listFiles();
+        if(files == null){
+            System.out.println("EMPTY TRAINING DIRECTORY " + dir.getAbsolutePath());
+            return new ArrayList<>();
+        }
         for(File labelDir : dir.listFiles()){
             if(labelDir.isDirectory()){
                 for(File textFile: labelDir.listFiles()){

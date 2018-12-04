@@ -3,19 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/ML/TextClassification/src/textclassification/training/TrainingInstance.java</file>
-            <file>file:/E:/ML/TextClassification/src/textclassification/TextClassification.java</file>
-            <file>file:/E:/ML/TextClassification/src/textclassification/training/BayesModelGenerator.java</file>
-            <file>file:/E:/ML/TextClassification/src/textclassification/ClassifyOperation.java</file>
-            <file>file:/E:/ML/TextClassification/src/textclassification/BayesClassificationModel.java</file>
-            <file>file:/E:/ML/TextClassification/src/textclassification/BayesModelSerialization.java</file>
-            <file>file:/E:/ML/TextClassification/src/textclassification/training/DirectoryTrainingInstancesProvider.java</file>
-            <file>file:/E:/ML/TextClassification/src/textclassification/UnrecognizedOperation.java</file>
-            <file>file:/E:/ML/TextClassification/src/textclassification/ClassificationModel.java</file>
-            <file>file:/E:/ML/TextClassification/src/textclassification/TrainOperation.java</file>
-            <file>file:/E:/ML/TextClassification/src/textclassification/Operation.java</file>
-            <file>file:/E:/ML/TextClassification/nbproject/build-impl.xml</file>
-            <file>file:/E:/ML/TextClassification/src/textclassification/Utils.java</file>
+            <file>file:/Users/candronache/Desktop/TestProjects/MLTextClassifier/src/textclassification/BayesClassificationModel.java</file>
+            <file>file:/Users/candronache/Desktop/TestProjects/MLTextClassifier/src/textclassification/training/DirectoryTrainingInstancesProvider.java</file>
+            <file>file:/Users/candronache/Desktop/TestProjects/MLTextClassifier/src/textclassification/TextClassification.java</file>
+            <file>file:/Users/candronache/Desktop/TestProjects/MLTextClassifier/src/textclassification/TrainOperation.java</file>
+            <file>file:/Users/candronache/Desktop/TestProjects/MLTextClassifier/src/textclassification/Utils.java</file>
+            <file>file:/Users/candronache/Desktop/TestProjects/MLTextClassifier/src/textclassification/BayesModelSerialization.java</file>
         </group>
     </open-files>
 </project-private>

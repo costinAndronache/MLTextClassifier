@@ -46,8 +46,8 @@ public class BayesClassificationModel implements ClassificationModel {
         labels().forEach((label) -> {
             double probLabel = this.labelsWithAprioriProbabilities.get(label);
             double probWords = filteredWords.stream().map(w -> this.wordProbabilitiesInLabels.get(w).get(label))
-                    .reduce(1.0, (a, b) -> a * b);
-            result.put(label, probLabel * probWords);
+                    .reduce(0.0, (a, b) -> Math.log(a) + Math.log(b));
+            result.put(label, Math.log(probLabel) + Math.log(probWords));
         });
         return result;
     }
